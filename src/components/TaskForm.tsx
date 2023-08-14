@@ -14,7 +14,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onTaskCreated }) => {
     e.preventDefault();
 
     try {
-      const response = await api.post('tasks', { title, isCompleted: false });
+      const response = await api.post('create', { title, isCompleted: false });
       onTaskCreated(response.data);
       setTitle('');
     } catch (error) {
