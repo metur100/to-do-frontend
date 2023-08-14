@@ -7,7 +7,7 @@ interface TaskSwitcherProps {
 
 const TaskSwitcher: React.FC<TaskSwitcherProps> = ({ onListSwitch }) => {
   return (
-    <div className="switcher-container"> {/* Apply the container class */}
+    <div className="switcher-container">
       <button className="switcher-button" onClick={() => onListSwitch('all')}>All</button>
       <button className="switcher-button" onClick={() => onListSwitch('active')}>Active</button>
       <button className="switcher-button" onClick={() => onListSwitch('completed')}>Completed</button>
