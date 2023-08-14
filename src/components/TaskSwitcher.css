@@ -1,0 +1,27 @@
+/* TaskSwitcher.css */
+.switcher-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .switcher-button {
+    background-color: #ccc;
+    color: #555;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 0 5px;
+  }
+  
+  .switcher-button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .switcher-button:hover {
+    background-color: #ddd;
+  }
+  

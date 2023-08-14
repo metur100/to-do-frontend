@@ -1,0 +1,63 @@
+/* Task.css */
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: white;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.task:hover {
+  background-color: #f6f6f6;
+  border-color: #ccc;
+}
+
+.checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.checkmark.checked {
+  border-color: #333;
+  background-color: #333;
+}
+
+.task input[type="checkbox"]:checked + .checkmark::before {
+  display: block;
+}
+
+.task-title {
+  flex-grow: 1;
+  margin-right: 10px;
+  margin-left: 10px; /* Add this line to add space between checkmark and text */
+}
+
+.task.completed .task-title {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.task button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task button:hover {
+  background-color: #c82333;
+}
