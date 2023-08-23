@@ -33,7 +33,7 @@ To set up and run the **To-Do Frontend** project:
 1. Clone this repository.
 2. Navigate to the project directory and install dependencies using `npm install`.
 3. Configure the API endpoint URLs in the relevant components (TaskForm, TaskList, etc.).
-4. Run the application using `npm start`.
+4. Run the application using `npm run dev`.
 
 Feel free to explore and customize the project according to your preferences!
 
